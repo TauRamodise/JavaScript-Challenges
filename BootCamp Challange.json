@@ -1,0 +1,78 @@
+//CHALLANGE 1//
+
+function test65(a, b) {
+if (a==65) {
+return true; 
+} else if (b==65) {
+return true;
+
+} else if (a + b == 65) {
+return true;
+} else {
+	return false;
+}
+}
+
+console.log(test65(60,60))
+console.log(test65(65,65))
+console.log(test65(5,5))
+console.log(test65(30,35))
+
+
+//CHALLANGE 2//
+
+var a = 7;
+var b = 8;
+var c = 9;
+var x = (a + b + c)/2;
+var area = Math.sqrt(x*((x-a)*(x-b)*(x-c)));
+console.log(area);
+
+// CHALLANGE 3//
+
+function max_of_three(a, b, c) {
+	max_val = 0;
+	if (a > b)
+	{ 
+		max_val = a;
+	} else {
+		max_val = b;
+	} if (c > max_val) {
+		max_val = c;
+	}
+	return max_val
+}
+
+console.log(max_of_three(22, 55, 88))
+console.log(max_of_three(33, 66, 99))
+console.log(max_of_three(44, 77, 111))
+
+// CHALLANGE 4//
+
+function time_convert(val) {
+	var hours = Math.floor(val / 60);
+	var minutes = val % 60;
+	return hours + ":" + minutes;
+}
+
+console.log(time_convert(121));
+console.log(time_convert(1212));
+console.log(time_convert(12121));
+
+// CHALLANGE 5// 
+
+var a = "happy";
+ var b = "happiest";
+ var i;
+ var k;
+ var counter = 0; 
+ for(i=0; i<a.length; i++)
+  {
+ 	for (k=0; k<b.length; k++)
+ 	 {
+ 		if(a[i] == b[k])
+ 		{
+			console.log(b[k]);
+		}
+ 	}
+ }
